@@ -1,0 +1,17 @@
+#boxes{
+    text-align: center;
+    /* margin-top: 10px; */
+}
+#leftbox {
+    float:left; 
+    width: 25%;
+    height:auto;
+}
+#middlebox{
+    float:left; 
+    width: 70%;
+    height:auto;
+}
+.content{
+    text-align: start;
+}

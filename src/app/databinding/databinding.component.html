@@ -1,0 +1,33 @@
+<h1>Data Binding in Angular</h1>
+<br>
+<p>Data binding is a technique, where the data stays in sync between the component and the view. Whenever the user updates the data in the view, Angular updates the component. When the component gets new data, the Angular updates the view.</p>
+<br>
+<p>The data binding in Angular can be broadly classified into two groups. One way binding or two-way binding</p>
+<br>
+<h1>One way binding</h1>
+<br>
+<p>In one way binding data flows from one direction. Either from view to component or from component to view.</p>
+<br>
+<h1>From Component to View</h1>
+<br>
+<p>To bind data from component to view, we make use of Interpolation & Property Binding.</p>
+<h1>Interpolation</h1>
+<p>Interpolation allows us to include expressions as part of any string literal, which we use in our HTML. The angular evaluates the expressions into a string and replaces it in the original string and updates the view. You can use interpolation wherever you use a string literal in the view</p>
+<br>
+<h1>Property binding</h1>
+<br>
+<p>The Property binding allows us to bind HTML element property to a property in the component. Whenever the value of the component changes, the Angular updates the element property in the View. You can set the properties such as class, href, src, textContent, etc using property binding. You can also use it to set the properties of custom components or directives (properties decorated with @Input).</p>
+<br>
+<h1>From View to Components</h1>
+<br>
+<h1>Event Binding</h1>
+<br>
+<p>Event binding allows us to bind events such as keystrokes, clicks, hover, touch, etc to a method in component. It is one way from view to component. By tracking the user events in the view and responding to it, we can keep our component in sync with the view. For Example, when the user changes input in a text box, we can update the model in the component, run some validations, etc. When the user submits the button, we can then save the model to the backend server.</p>
+<br>
+<h1>Two Way binding</h1>
+<br>
+<p>Two-way binding means that changes made to our model in the component are propagated to the view and that any changes made in the view are immediately updated in the underlying component</p>
+<br>
+<h1>ngModel</h1>
+<br>
+<p>The Angular uses the ngModel directive to achieve the two-way binding on HTML Form elements. It binds to a form element like input, select, selectarea. etc.</p>

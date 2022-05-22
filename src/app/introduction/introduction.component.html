@@ -1,0 +1,91 @@
+<h1><b>Introduction to Angular concepts</b></h1>
+<br>
+<p>
+    Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular
+    is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you
+    import into your applications.
+</p>
+<br>
+<p>
+    The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the
+    Angular framework are Angular components that are organized into NgModules. NgModules collect related code into
+    functional sets; an Angular application is defined by a set of NgModules. An application always has at least a root
+    module that enables bootstrapping, and typically has many more feature modules.
+</p>
+<ul>
+    <li>Components define views, which are sets of screen elements that Angular can choose among and modify according to
+        your program logic and data</li>
+    <li>Components use services, which provide specific functionality not directly related to views. Service providers
+        can be injected into components as dependencies, making your code modular, reusable, and efficient.</li>
+</ul>
+<br>
+<p>Modules, components and services are classes that use decorators. These decorators mark their type and provide
+    metadata that tells Angular how to use them.</p>
+<br>
+<ul>
+    <li>The metadata for a component class associates it with a template that defines a view. A template combines
+        ordinary HTML with Angular directives and binding markup that allow Angular to modify the HTML before rendering
+        it for display.</li>
+    <li>The metadata for a service class provides the information Angular needs to make it available to components
+        through dependency injection (DI)</li>
+</ul>
+<br>
+<p>An application's components typically define many views, arranged hierarchically. Angular provides the Router service
+    to help you define navigation paths among views. The router provides sophisticated in-browser navigational
+    capabilities.</p>
+<h1><b>Modules</b></h1>
+<br>
+<p>An application's components typically define many views, arranged hierarchically. Angular provides the Router service
+    to help you define navigation paths among views. The router provides sophisticated in-browser navigational
+    capabilities.</p>
+<br>
+<h1>Components</h1>
+<br>
+<p>Every Angular application has at least one component, the root component that connects a component hierarchy with the
+    page document object model (DOM). Each component defines a class that contains application data and logic, and is
+    associated with an HTML template that defines a view to be displayed in a target environment.</p>
+<h1>Templates, directives, and data binding</h1>
+<br>
+<p>A template combines HTML with Angular markup that can modify HTML elements before they are displayed. Template
+    directives provide program logic, and binding markup connects your application data and the DOM. There are two types
+    of data binding:</p>
+<br>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>DATA BINDINGS</th>
+            <th>DETAILS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <TD>Event binding</TD>
+            <td>Lets your application respond to user input in the target environment by updating your application data.
+            </td>
+        </tr>
+        <tr>
+            <td>Property binding</td>
+            <td>Lets you interpolate values that are computed from your application data into the HTML.</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h1><b>Services and dependency injection</b></h1>
+<br>
+<p>For data or logic that isn't associated with a specific view, and that you want to share across components, you
+    create a service class. A service class definition is immediately preceded by the @Injectable() decorator. The
+    decorator provides the metadata that allows other providers to be injected as dependencies into your class.</p>
+<BR>
+<P>Dependency injection (DI) lets you keep your component classes lean and efficient. They don't fetch data from the
+    server, validate user input, or log directly to the console; they delegate such tasks to services.</P>
+<BR>
+<H1><B>Routing</B></H1>
+<br>
+<p>The Angular Router NgModule provides a service that lets you define a navigation path among the different application
+    states and view hierarchies in your application. It is modeled on the familiar browser navigation conventions:</p>
+<ul>
+    <li>Enter a URL in the address bar and the browser navigates to a corresponding page</li>
+    <li>Click links on the page and the browser navigates to a new page</li>
+    <li>Click the browser's back and forward buttons and the browser navigates backward and forward through the history
+        of pages you've seen</li>
+</ul>

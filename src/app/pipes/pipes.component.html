@@ -1,0 +1,49 @@
+<h1><b>Transforming Data Using Pipes</b></h1>
+<br>
+<p>
+    Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions to
+    use in template expressions to accept an input value and return a transformed value. Pipes are useful because you
+    can use them throughout your application, while only declaring each pipe once. For example, you would use a pipe to
+    show a date as April 15, 1988 rather than the raw string format.
+</p>
+<br>
+<p>
+    Angular provides built-in pipes for typical data transformations, including transformations for internationalization
+    (i18n), which use locale information to format data. The following are commonly used built-in pipes for data
+    formatting:
+</p>
+<br>
+<table style="width:100%" class="table table-striped">
+    <thead>
+        <tr>
+            <th>PIPES</th>
+            <th>DETAILS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a (click)="pipesRoute()">DatePipe</a></td>
+            <td>Formats a date value according to locale rules.</td>
+        </tr>
+        <tr>
+            <td><a (click)="pipesRoute()">UpperCasePipe</a></td>
+            <td>Transforms text to all upper case.</td>
+        </tr>
+        <tr>
+            <td><a (click)="pipesRoute()">LowerCasePipe</a></td>
+            <td>Transforms text to all lower case.</td>
+        </tr>
+        <tr>
+            <td><a (click)="pipesRoute()">CurrencyPipe</a></td>
+            <td>Transforms a number to a currency string, formatted according to locale rules.</td>
+        </tr>
+        <tr>
+            <td><a (click)="pipesRoute()">DecimalPipe</a></td>
+            <td>Transforms a number into a string with a decimal point, formatted according to locale rules.</td>
+        </tr>
+        <tr>
+            <td><a (click)="pipesRoute()">PercentPipe</a></td>
+            <td>Transforms a number to a percentage string, formatted according to locale rules.</td>
+        </tr>
+    </tbody>
+</table>

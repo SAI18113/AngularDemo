@@ -1,0 +1,48 @@
+<h1><b>Introduction to forms in Angular</b></h1>
+<br>
+<p>
+    Handling user input with forms is the cornerstone of many common applications. Applications use forms to enable
+    users to log in, to update a profile, to enter sensitive information, and to perform many other data-entry tasks.
+</p>
+<br>
+<p>
+    Angular provides two different approaches to handling user input through forms: reactive and template-driven. Both
+    capture user input events from the view, validate the user input, create a form model and data model to update, and
+    provide a way to track changes.
+</p>
+<br>
+<p>
+    This guide provides information to help you decide which type of form works best for your situation. It introduces
+    the common building blocks used by both approaches. It also summarizes the key differences between the two
+    approaches, and demonstrates those differences in the context of setup, data flow, and testing.
+</p>
+<br>
+<h1><b>Choosing an approach</b></h1>
+<br>
+<p>Reactive forms and template-driven forms process and manage form data differently. Each approach offers different
+    advantages.</p>
+<br>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>FORMS</th>
+            <th>DETAILS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th><a (click)="reactiveRoute()">Reactive forms</a></th>
+            <th>Provide direct, explicit access to the underlying forms object model. Compared to template-driven forms,
+                they are more robust: they're more scalable, reusable, and testable. If forms are a key part of your
+                application, or you're already using reactive patterns for building your application, use reactive
+                forms.</th>
+        </tr>
+        <tr>
+            <th><a (click)="templateRoute()">Template-driven forms</a></th>
+            <th>Rely on directives in the template to create and manipulate the underlying object model. They are useful
+                for adding a simple form to an app, such as an email list signup form. They're straightforward to add to
+                an app, but they don't scale as well as reactive forms. If you have very basic form requirements and
+                logic that can be managed solely in the template, template-driven forms could be a good fit.</th>
+        </tr>
+    </tbody>
+</table>

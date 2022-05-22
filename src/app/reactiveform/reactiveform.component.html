@@ -1,0 +1,67 @@
+<div class="form" >
+    <h2 id="registration">Registration Form</h2>
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+      <label for="firstname"><b>First Name:</b></label>
+      <input type="text" id="fname" formControlName="firstname">
+      <div>
+        
+          <small *ngIf="reactiveForm.get('firstname')?.invalid && reactiveForm.get('firstname')?.touched">First Name is a required field</small>
+      </div>
+      <br>
+      <label for="lname"><b>Last Name:</b></label>
+      <input type="text" id="lname" formControlName="lastname" required>
+      <div>
+        <small *ngIf="reactiveForm.get('lastname')?.invalid && reactiveForm.get('lastname')?.touched">Last Name is a required field</small>
+      </div>
+      <br>
+      <label for="email"><b>Email:</b></label>
+      <input type="email" id="email" formControlName="email">
+      <br>
+      <div>
+        <small *ngIf="reactiveForm.get('email')?.invalid && reactiveForm.get('email')?.touched">Email is a required field</small>
+      </div>
+      <label for="branch"><b>Branch</b></label>
+      <select id="branch" formControlName="branch">
+        <option value="Civil">Civil</option>
+        <option value="EEE">EEE</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="ECE">ECE</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+      </select>
+      <div>
+        <small *ngIf="reactiveForm.get('branch')?.invalid && reactiveForm.get('branch')?.touched">Branch is a required field</small>
+      </div>
+      <br>
+      <label for="gender"><b>Gender:</b></label>
+      <input type="radio" id="male" value="male" formControlName="gender">
+      <label for="male"><b>Male</b></label>
+      <input type="radio" id="female" value="female" formControlName="gender">
+      <label for="female"><b>FeMale</b></label>
+      <div>
+        <small *ngIf="reactiveForm.get('gender')?.invalid && reactiveForm.get('gender')?.touched">Gender is a required field</small>
+      </div>
+      <br>
+      <label for="lname"><b>Password:</b></label>
+      <input type="password" id="password" formControlName="password">
+      <div>
+        <small *ngIf="reactiveForm.get('password')?.invalid && reactiveForm.get('password')?.touched">Password is a required field</small>
+      </div>
+      <br>
+      <input type="checkbox" id="candt" formControlName="tandc">
+      <label for="candt"><b>Remember me</b></label>
+      <br>
+      <input type="submit" value="Submit" id="btn" >
+    </form>
+  </div>
+
+  <div class="form-data">
+    <h3>Form Data</h3>
+    <p>First Name: <b>{{reactiveForm.value.firstname}}</b></p>
+    <p>Last Name: <b>{{reactiveForm.value.lastname}}</b></p>
+    <p>Email: <b>{{reactiveForm.value.email}}</b></p>
+    <p>Branch: <b>{{reactiveForm.value.branch}}</b></p>
+    <p>Gender: <b>{{reactiveForm.value.gender}}</b></p>
+    <p>Remember me: <b>{{reactiveForm.value.tandc}}</b></p>
+  </div>
+
